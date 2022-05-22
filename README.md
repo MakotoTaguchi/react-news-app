@@ -1,2 +1,3 @@
 # react-news-app
-reactでスマホニュースアプリ作成
+
+react でスマホニュースアプリ作成！
