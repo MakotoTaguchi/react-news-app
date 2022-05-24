@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, View, FlatList, SafeAreaView } from "react-native";
-// import { useState } from "react/cjs/react.development";
 import ListItem from "./components/ListItem";
 import dummyArticles from "./dummies/articles";
 import Constants from "expo-constants";
