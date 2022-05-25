@@ -16,7 +16,8 @@
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.useful.news-app",
+      "supportsTablet": false
     },
     "android": {
       "adaptiveIcon": {
