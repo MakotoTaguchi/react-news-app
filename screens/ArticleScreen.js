@@ -3,6 +3,7 @@ import { SafeAreaView, StyleSheet, Text, TouchableOpacity } from "react-native";
 import { WebView } from "react-native-webview";
 import { useDispatch, useSelector } from "react-redux";
 import ClipButton from "../components/ClipButton";
+import Loading from "../components/Loading";
 import { addClip, deleteClip } from "../store/actions/user";
 
 const styles = StyleSheet.create({
@@ -35,7 +36,11 @@ ArticleScreen = ({ route }) => {
   return (
     <SafeAreaView style={styles.container}>
       <ClipButton onPress={toggleClip} enabled={isClipped()} />
-      <WebView source={{ url: article.url }} />
+      <WebView
+        source={{ url: article.url }}
+        startInLoadingState={true}
+        renderLoading={() => <Loading />}
+      />
     </SafeAreaView>
   );
 };
